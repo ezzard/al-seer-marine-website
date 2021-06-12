@@ -8,6 +8,7 @@ import Explore from "./pages/Explore";
 import Create from "./pages/Create";
 import Own from "./pages/Own";
 import Crew from "./pages/Crew";
+import See from "./pages/See";
 
 import "./App.scss";
 
@@ -23,6 +24,7 @@ function App() {
           <Route path="/create" component={Create} />
           <Route path="/own" component={Own} />
           <Route path="/crew" component={Crew} />
+          <Route path="/see" component={See} />
         </Switch>
       </Router>
     </div>

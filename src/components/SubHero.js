@@ -18,6 +18,7 @@ function SubHero(props) {
             <p>{props.subtitle}</p>
           </div>
           <div className="subtitle-text">
+            <h3>{props.title}</h3>
             <p className="firstLine">{props.firstLine}</p>
             <p className="block-text">{props.blockText}</p>
             <>{props.bold}</>

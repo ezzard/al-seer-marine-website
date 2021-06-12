@@ -376,7 +376,7 @@ span {
 }
 
 .sub-hero-viewport {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .sub-hero {
@@ -397,6 +397,7 @@ span {
         max-width: 45em;
         h1 {
           margin-left: -0.1em;
+          color: var(--primary-color-900);
         }
         h4 {
           font-size: 2.4rem;
@@ -406,6 +407,7 @@ span {
         }
         p {
           font-size: 1rem;
+          margin-top: -3em;
         }
       }
       .subtitle-text {
@@ -423,6 +425,9 @@ span {
   }
 }
 
+.sub-hero .sub-hero-container .split .subtitle-text p {
+  font-size: 1rem;
+}
 /*********Run Content**************/
 
 .run-content {
@@ -498,6 +503,71 @@ span {
   background-image: url("./assets/images/image-crew.jpg");
   background-position: center;
   background-size: cover;
+}
+
+/**********See**********/
+
+.bg-see {
+  background-image: url("./assets/images/image-15.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.centered {
+  margin: 0 auto;
+  max-width: 80vw;
+}
+
+.subtitle-text h3 {
+  font-size: 2rem;
+  color: var(--primary-color-900);
+  margin-bottom: 0.5em;
+}
+
+.bg-cards {
+  background-color: #f9f9f9;
+  min-height: 85vh;
+}
+
+.small-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+
+.small-cards .container {
+  min-width: 83%;
+}
+
+.card-single {
+  margin: 2em 2em;
+}
+
+.card-single img {
+  padding: 1em;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px -1px #b5b5b5;
+  border-radius: 2.5em;
+  margin-bottom: 2em;
+}
+
+.card-single p {
+  font-size: 0.9rem;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 11em;
+}
+
+.bg-cards p {
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.cards-description {
+  padding: 3em 0;
 }
 
 /*****Footer*******/

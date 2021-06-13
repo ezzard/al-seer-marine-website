@@ -8,7 +8,7 @@ function SubHero(props) {
       <div className="sub-hero-container">
         <div className="number-line">
           <p className="number-section">{props.number}</p>
-          {/*<span className="line"></span>*/}
+          <span className="line"></span>
           <>{props.line}</>
         </div>
         <div className="split">

@@ -9,6 +9,7 @@ import Create from "./pages/Create";
 import Own from "./pages/Own";
 import Crew from "./pages/Crew";
 import See from "./pages/See";
+import Ask from "./pages/Ask";
 
 import "./App.scss";
 
@@ -25,6 +26,7 @@ function App() {
           <Route path="/own" component={Own} />
           <Route path="/crew" component={Crew} />
           <Route path="/see" component={See} />
+          <Route path="/ask" component={Ask} />
         </Switch>
       </Router>
     </div>

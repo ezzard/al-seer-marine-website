@@ -2,7 +2,7 @@
     "name": "al-seer-marine-website",
     "version": "0.1.0",
     "private": true,
-    "homepage": "http://ezzard.github.io/al-seer-marine-website",
+    "homepage": "https://ezzard.github.io/al-seer-marine-website/",
     "dependencies": {
         "@testing-library/jest-dom": "^5.13.0",
         "@testing-library/react": "^11.2.7",

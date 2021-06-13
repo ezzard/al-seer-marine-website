@@ -1,0 +1,23 @@
+// @import "../../styles/variables";
+
+.container {
+    display: flex;
+    flex-direction: row;
+    // width: 80%;
+    margin: auto;
+}
+
+.card_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 71px;
+    /* margin: 5rem 0 6.4rem 0; */
+    margin: 0 auto;
+    width: 85.5%;
+}
+
+.card_bg {
+    // background-color: $white-bg;
+    background-color: white;
+    padding: 11px;
+}

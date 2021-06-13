@@ -56,7 +56,7 @@ section {
 
 .container {
   margin-inline: auto;
-  width: calc(min(90%, 85rem));
+  width: calc(min(90%, 94rem));
 }
 
 /******Navbar-Menu*******/
@@ -353,6 +353,30 @@ span {
   }
 }
 
+/***********HomeSection Form*************/
+
+.home-section-form {
+  height: 100%;
+  width: 100%;
+}
+
+.form-section {
+  width: 50vw;
+  min-height: 100vh;
+}
+
+.form-section .line {
+  width: 37vw;
+}
+
+.form-section .number-line {
+  margin-bottom: 2em;
+}
+.form-section-container {
+  width: 80%;
+  margin: 2em 0 auto auto;
+}
+
 /***********Run**************/
 
 .bg-run {
@@ -578,23 +602,27 @@ span {
   background-size: cover;
 }
 
-/*******Form************/
-form {
-  font-family: "Montserrat", sans-serif;
+.map-container-ask {
+  min-height: 85vh;
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 7em;
 }
+
+/*******Form************/
 
 .form-container {
   max-width: 700px;
   width: 100%;
   background-color: #fff;
-  padding: 25px 30px;
 }
 
 .content form .user-details {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 20px 0 12px 0;
+  margin: 20px 0 20px 0;
   width: 80%;
 }
 form .user-details .input-box {
@@ -620,16 +648,22 @@ form .input-box span.details {
   border-color: #0067b1;
 }
 
-form .contact-preference .contact-title {
-  font-size: 12px;
+form .contact-preference .contact-title,
+form .checkbox-group .interests-title {
+  font-size: 0.9rem;
   font-weight: 300;
+  margin-bottom: 1em;
 }
 
 form .category {
   display: flex;
   width: 20%;
-  margin: 14px 0;
+  margin: 30px 0;
   justify-content: space-between;
+}
+
+form .category span {
+  font-size: 0.9rem;
 }
 
 .wider {
@@ -650,15 +684,59 @@ form .category label .dot {
   border: 5px solid transparent;
   transition: all 0.3s ease;
 }
+
+form .category label .check {
+  height: 18px;
+  width: 18px;
+  border-radius: 2px;
+  margin-right: 10px;
+  border: 1px solid #999;
+  transition: all 0.3s ease;
+}
+
 #dot-1:checked ~ .category label .one,
 #dot-2:checked ~ .category label .two,
-#dot-3:checked ~ .category label .three {
+#dot-3:checked ~ .category label .three,
+#dot-4:checked ~ .category label .four {
   background: #fff;
   border-color: #0d1c2c;
 }
-form input[type="radio"] {
+
+#check-1:checked ~ .category label .one,
+#check-2:checked ~ .category label .two,
+#check-3:checked ~ .category label .three,
+#check-4:checked ~ .category label .four {
+  border: solid #999;
+  border-width: 0 2px 2px 0;
+  left: 9px;
+  top: 5px;
+  width: 6px;
+  height: 12px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.check:checked {
+  outline: 1px solid #999;
+  transform: none;
+}
+
+.checkbox-group .category {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90% !important;
+}
+
+.checkbox-group label {
+  padding: 2em 2em 2em 0;
+}
+
+form input[type="radio"],
+form input[type="checkbox"] {
   display: none;
 }
+
 form .button {
   height: 45px;
   margin: 25px 0 25px auto;
@@ -704,6 +782,19 @@ form .button input:hover {
   .container .content .category {
     flex-direction: column;
   }
+}
+
+textarea {
+  outline: none;
+  resize: none;
+  min-width: 100%;
+  padding: 1em;
+}
+
+input,
+textarea,
+select {
+  font-family: inherit;
 }
 
 /*****Footer*******/

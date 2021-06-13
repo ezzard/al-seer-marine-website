@@ -1,18 +1,15 @@
 import React from "react";
 import ImageSection from "./ImageSection";
-import TextSection from "./TextSection";
+import FormSection from "./FormSection";
 
 import imageForm from "../assets/images/image-form.jpg";
 
 function HomeSectionForm() {
   return (
-    <div className="home-section">
+    <div className="home-section-form">
       <div className="split">
-        <TextSection
-          number="01"
-          title="Ask"
-          description="Discover our 360° approach to luxury yacht management"
-        />
+        <FormSection number="07" title="Ask" />
+
         <ImageSection img={imageForm} />
       </div>
     </div>

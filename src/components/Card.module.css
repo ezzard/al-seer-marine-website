@@ -1,0 +1,62 @@
+.card {
+  border-radius: 32px;
+  -webkit-box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.102);
+          box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.102);
+}
+
+.img_wrapper {
+  width: 35%;
+  margin: 2rem auto;
+}
+
+.icon {
+  display: block;
+  width: 100%;
+}
+
+.title_wrapper {
+  margin: 0 60px 48px 60px;
+}
+
+.title {
+  color: #0d1c2d;
+  text-align: center;
+  font-weight: 600;
+  font-size: 46px;
+  margin: 80px auto 32px auto;
+}
+
+.text {
+  color: #0d1c2d;
+  text-align: center;
+  font-size: 18px;
+}
+
+.salary {
+  color: #0d1c2d;
+  text-align: center;
+  font-size: 26px;
+  margin: 16px auto;
+}
+
+.card_btn {
+  height: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card_text {
+  font-size: 18px;
+  color: black;
+  margin: auto 0;
+  padding-left: 1.5rem;
+  text-align: center;
+}
+
+.card_icon {
+  width: 37px;
+  margin: auto 0 auto 16px;
+  height: unset;
+}
+/*# sourceMappingURL=Card.module.css.map */

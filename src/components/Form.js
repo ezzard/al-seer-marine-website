@@ -63,37 +63,37 @@ function Form() {
               <div className="category wider">
                 <label className="check-container" for="check-1">
                   <span className="check one"></span>
-                  <span className="preference">Email Address</span>
+                  <span className="preference">Telephone Number</span>
                 </label>
                 <label for="check-2">
                   <span className="check two"></span>
                   <span className="preference">Telephone Number</span>
                 </label>
-                <label for="check-2">
+                <label for="check-3">
                   <span className="check three"></span>
                   <span className="preference">Telephone Number</span>
                 </label>
-                <label for="check-2">
+                <label for="check-4">
                   <span className="check four"></span>
                   <span className="preference">Telephone Number</span>
                 </label>
-                <label for="check-2">
+                <label for="check-5">
                   <span className="check five"></span>
                   <span className="preference">Telephone Number</span>
                 </label>
-                <label for="check-2">
+                <label for="check-6">
                   <span className="check six"></span>
                   <span className="preference">Telephone Number</span>
                 </label>
-                <label for="check-2">
+                <label for="check-7">
                   <span className="check seven"></span>
                   <span className="preference">Telephone Number</span>
                 </label>
-                <label for="check-2">
+                <label for="check-8">
                   <span className="check eight"></span>
                   <span className="preference">Telephone Number</span>
                 </label>
-                <label for="check-2">
+                <label for="check-9">
                   <span className="check nine"></span>
                   <span className="preference">Telephone Number</span>
                 </label>

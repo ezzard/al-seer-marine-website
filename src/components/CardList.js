@@ -10,24 +10,22 @@ import styles from "./CardList.module.scss";
 const HomeCardList = (props) => {
     return (
         <article className={styles.card_grid}>
-            {props.items.map((item) => {
-                console.log(item);
+            {props.items.map((jobPosting) => {
+                console.log(jobPosting);
                 return (
                     <Card
-                        key={item.id}
-                        id={item.id}
-                        title={item.title}
-                        description={item.description}
-                        currency={item.currency}
-                        salary={item.salary}
-                        startDate={`Starting ${item.startDate}`}
+                        key={jobPosting.id}
+                        id={jobPosting.id}
+                        title={jobPosting.title}
+                        description={jobPosting.description}
+                        currency={jobPosting.currency}
+                        salary={jobPosting.salary}
+                        startDate={`Starting ${jobPosting.startDate}`}
                         linkTo={`/job-posting/1`}
                         icon={null}
-                        image={item.image || null}
                         iconColor={null}
                         cardColor={styles.card_bg}
-                        cardStyle={item.style}
-                        // linkTo={`/job-posting/${item.id}`}
+                        // linkTo={`/job-posting/${jobPosting.id}`}
                         // onClick={props.onDeletePost}
                     />
                 );

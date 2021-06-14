@@ -1,0 +1,104 @@
+.wrapper {
+  position: relative;
+  top: 0;
+  height: 291rem;
+}
+
+.img_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+.titles_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  width: 100%;
+}
+
+.bg_image {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-image: url("../assets/images/Group_343.jpg");
+}
+
+.title {
+  font-weight: 300;
+  font-size: 100px;
+  line-height: 122px;
+  text-align: center;
+  width: 50%;
+  color: white;
+  margin: auto;
+}
+
+.subtitle {
+  font-weight: bold;
+  font-size: 100px;
+  line-height: 122px;
+  text-align: center;
+  color: white;
+  margin: 0 auto 27rem auto;
+}
+
+.cta_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.cta_title {
+  font-weight: normal;
+  font-size: 45px;
+  line-height: 53px;
+  text-align: center;
+  color: white;
+  width: 41%;
+  margin: auto auto 4rem auto;
+}
+
+.margin {
+  margin-bottom: 13rem;
+}
+
+.cta_text {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: white;
+  width: 33%;
+  margin: auto;
+}
+
+.card_section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #f9f9f9;
+  padding: 0 0 120px 0;
+}
+
+.card_section_title {
+  font-size: 50px;
+  font-weight: 600;
+  margin: 166px auto 90px auto;
+}
+/*# sourceMappingURL=Join.module.css.map */

@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/al-seer-marine-website/static/css/main.96a84ffc.chunk.css",
-    "main.js": "/al-seer-marine-website/static/js/main.c2b42e43.chunk.js",
-    "main.js.map": "/al-seer-marine-website/static/js/main.c2b42e43.chunk.js.map",
+    "main.css": "/al-seer-marine-website/static/css/main.64577b39.chunk.css",
+    "main.js": "/al-seer-marine-website/static/js/main.58447202.chunk.js",
+    "main.js.map": "/al-seer-marine-website/static/js/main.58447202.chunk.js.map",
     "runtime-main.js": "/al-seer-marine-website/static/js/runtime-main.0e422f3e.js",
     "runtime-main.js.map": "/al-seer-marine-website/static/js/runtime-main.0e422f3e.js.map",
     "static/js/2.63a3d8e8.chunk.js": "/al-seer-marine-website/static/js/2.63a3d8e8.chunk.js",
@@ -10,11 +10,12 @@
     "static/js/3.f1e43731.chunk.js": "/al-seer-marine-website/static/js/3.f1e43731.chunk.js",
     "static/js/3.f1e43731.chunk.js.map": "/al-seer-marine-website/static/js/3.f1e43731.chunk.js.map",
     "index.html": "/al-seer-marine-website/index.html",
-    "static/css/main.96a84ffc.chunk.css.map": "/al-seer-marine-website/static/css/main.96a84ffc.chunk.css.map",
+    "static/css/main.64577b39.chunk.css.map": "/al-seer-marine-website/static/css/main.64577b39.chunk.css.map",
     "static/js/2.63a3d8e8.chunk.js.LICENSE.txt": "/al-seer-marine-website/static/js/2.63a3d8e8.chunk.js.LICENSE.txt",
+    "static/media/210315_ASM_Edit_V4.e8605cdd.mp4": "/al-seer-marine-website/static/media/210315_ASM_Edit_V4.e8605cdd.mp4",
     "static/media/Join.module.scss": "/al-seer-marine-website/static/media/Group_343.6044918b.jpg",
     "static/media/arrow-right-dark.a6ce42aa.svg": "/al-seer-marine-website/static/media/arrow-right-dark.a6ce42aa.svg",
-    "static/media/arrow_card_btn.0f93749e.svg": "/al-seer-marine-website/static/media/arrow_card_btn.0f93749e.svg",
+    "static/media/arrow_card_btn.bce87f1d.svg": "/al-seer-marine-website/static/media/arrow_card_btn.bce87f1d.svg",
     "static/media/card_img_1.4c3fd7b7.jpg": "/al-seer-marine-website/static/media/card_img_1.4c3fd7b7.jpg",
     "static/media/card_img_2.f06b8989.jpg": "/al-seer-marine-website/static/media/card_img_2.f06b8989.jpg",
     "static/media/card_img_3.3e81a259.jpg": "/al-seer-marine-website/static/media/card_img_3.3e81a259.jpg",
@@ -42,12 +43,13 @@
     "static/media/image-6.8696b257.jpg": "/al-seer-marine-website/static/media/image-6.8696b257.jpg",
     "static/media/image-form.7d470f11.jpg": "/al-seer-marine-website/static/media/image-form.7d470f11.jpg",
     "static/media/image2.ef84b024.jpg": "/al-seer-marine-website/static/media/image2.ef84b024.jpg",
-    "static/media/logo-sidebar.9326aaf5.svg": "/al-seer-marine-website/static/media/logo-sidebar.9326aaf5.svg"
+    "static/media/logo-sidebar.9326aaf5.svg": "/al-seer-marine-website/static/media/logo-sidebar.9326aaf5.svg",
+    "static/media/map-1.765589e2.png": "/al-seer-marine-website/static/media/map-1.765589e2.png"
   },
   "entrypoints": [
     "static/js/runtime-main.0e422f3e.js",
     "static/js/2.63a3d8e8.chunk.js",
-    "static/css/main.96a84ffc.chunk.css",
-    "static/js/main.c2b42e43.chunk.js"
+    "static/css/main.64577b39.chunk.css",
+    "static/js/main.58447202.chunk.js"
   ]
 }

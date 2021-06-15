@@ -42,7 +42,9 @@ p {
 }
 
 p {
+  font-size: 18px;
   font-weight: var(--fw-regular-400);
+  line-height: 22px;
 }
 
 span {
@@ -183,13 +185,14 @@ span {
   h3 {
     font-size: 6.2em;
     font-weight: 300;
-    line-height: 1;
+    line-height: 76px;
     max-width: 66rem;
     text-transform: uppercase;
     color: white;
   }
   p {
-    padding: 5px 50px;
+    padding: 14px 58px;
+    font-size: 21px;
   }
   .primary-cta {
     display: flex;
@@ -203,7 +206,7 @@ span {
     }
     img {
       background-color: var(--primary-color-900);
-      padding: 24.5px 25px;
+      padding: 18px 20px;
       transition: 0.5s;
     }
   }
@@ -236,7 +239,8 @@ span {
     color: white;
   }
   p {
-    padding: 5px 50px;
+    padding: 14px 58px;
+    font-size: 21px;
   }
   .primary-cta {
     display: flex;
@@ -251,7 +255,7 @@ span {
     }
     img {
       background-color: var(--primary-color-900);
-      padding: 24.5px 25px;
+      padding: 18px 20px;
       transition: 0.5s;
     }
   }
@@ -387,7 +391,7 @@ span {
 }
 .form-section-container {
   width: 80%;
-  margin: 2em 0 auto auto;
+  margin: 5em 0 auto auto;
 }
 
 /***********Run**************/
@@ -421,17 +425,17 @@ span {
   height: 100%;
   .number-line {
     span {
-      width: 97%;
+      width: 100%;
     }
   }
   .sub-hero-container {
     padding-top: 25vh;
-    padding-left: 25vw;
+    padding-left: 350px;
     .split {
       .big-title {
-        margin-right: 10vw;
+        margin-right: 72px;
         margin-top: -5em;
-        max-width: 45em;
+        width: 557px;
         h1 {
           margin-left: -0.1em;
           color: var(--primary-color-900);
@@ -451,11 +455,16 @@ span {
         }
       }
       .subtitle-text {
-        max-width: 60em;
+        max-width: 810px;
+        h3 {
+          margin: 0;
+        }
         p {
           font-size: 18px;
+          line-height: 22px;
           font-weight: var(--fw-regular-400);
           color: #737373;
+          width: 760px;
         }
         .firstLine {
           margin-bottom: 1em;
@@ -472,24 +481,53 @@ span {
 
 .run-content {
   background-color: var(--bg-neutral-200);
+  height: 100%;
+}
 
-  .run-text-content {
-    padding: 8em 0;
-    max-width: 80em;
+summary {
+  color: var(--primary-color-900);
+  font-size: 80px;
+  cursor: pointer;
+  outline: none;
+}
+
+details {
+  padding: 90px 0;
+}
+
+details[open] summary ~ * {
+  animation: sweep 0.5s ease-in-out;
+}
+
+.drop-content {
+  padding-top: 45px;
+}
+
+details p {
+  font-size: 1rem;
+  max-width: 810px;
+  margin-bottom: 1em;
+  color: var(--neutral-gray-500);
+}
+
+details p span {
+  margin-bottom: 1em;
+}
+
+summary::marker {
+  background: url("./assets/images/drop-down-drk.svg") center no-repeat;
+  // color: transparent;
+  content: "";
+}
+
+@keyframes sweep {
+  from {
+    opacity: 0;
+    margin-top: -10px;
   }
-  h4 {
-    font-size: 4rem;
-    font-weight: 300;
-    color: var(--primary-color-900);
-    margin: 0;
-    padding-bottom: 0.2em;
-  }
-  p {
-    font-size: 1.1rem;
-  }
-  span {
-    width: 100%;
-    border-bottom: 1px solid var(--primary-color-900);
+  to {
+    opacity: 1;
+    margin-top: 0;
   }
 }
 
@@ -498,18 +536,26 @@ span {
 .bg-explore {
   background-image: url("./assets/images/image-10.jpg");
   background-position: center;
-  background-size: cover;
+  background-repeat: no-repeat;
+  -moz-background-size: 100% 100%;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
 }
 
 .map-container {
-  height: 100vh;
+  min-height: 100%;
 }
 
+.map-container img {
+  width: 100%;
+  height: auto;
+}
 /***********Create***********/
 
 .bg-create {
   background-image: url("./assets/images/image-13.jpg");
   background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
   .hero-static {
     .right-column {
@@ -529,6 +575,9 @@ span {
 
 .bg-own {
   background-image: url("./assets/images/image-14.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /********Crew**********/
@@ -539,11 +588,12 @@ span {
   }
 }
 
-.bg-crew {
-  background-image: url("./assets/images/image-crew.jpg");
-  background-position: center;
-  background-size: cover;
-}
+// .bg-crew {
+//   background-image: url("./assets/images/image-crew.jpg");
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   background-size: cover;
+// }
 
 /**********See**********/
 

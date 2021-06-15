@@ -22,14 +22,9 @@ function Navbar() {
       <IconContext.Provider value={{ color: "#fff" }}>
         <div className="navbar">
           <div className="container">
-            <Link to="#" className="menu-bars">
-              <img
-                src={menu}
-                alt="Menu"
-                className="mobile-menu"
-                onClick={showSidebar}
-              />
-            </Link>
+            <div class="menu-center" onClick={showSidebar}>
+              <img src={menu} alt="Menu" className="menu-bars" />
+            </div>
             <Link to="/" className="logo">
               <img src={logo} alt="Logo" className="mobile-menu" />
             </Link>

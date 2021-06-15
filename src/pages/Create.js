@@ -71,7 +71,17 @@ function Create() {
           subText="Remember, at ASM Yachts, we have you covered, from bow to stern."
         />
       </div>
-
+      <div className="footer-navigation">
+        <div className="button-description">
+          <p>Click to visit:</p>
+          <a href="/run">RUN</a>
+        </div>
+        <div className="vl"></div>
+        <div className="button-description">
+          <p>Click to visit:</p>
+          <a href="/own">OWN</a>
+        </div>
+      </div>
       <Footer />
     </div>
   );

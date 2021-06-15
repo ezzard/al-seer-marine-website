@@ -53,6 +53,17 @@ function Own() {
           />
         </div>
       </div>
+      <div className="footer-navigation">
+        <div className="button-description">
+          <p>Click to visit:</p>
+          <a href="/run">RUN</a>
+        </div>
+        <div className="vl"></div>
+        <div className="button-description">
+          <p>Click to visit:</p>
+          <a href="/create">CREATE</a>
+        </div>
+      </div>
       <Footer />
     </div>
   );

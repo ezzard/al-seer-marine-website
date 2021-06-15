@@ -27,6 +27,13 @@ function Run() {
         </div>
       </div>
       <RunContent />
+      <div className="footer-navigation">
+        <div className="button-description">
+          <p>Click to visit:</p>
+          <a href="/ask">ASK</a>
+        </div>
+      </div>
+
       <Footer />
     </div>
   );

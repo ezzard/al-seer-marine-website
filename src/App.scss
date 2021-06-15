@@ -53,11 +53,11 @@ span {
 
 a {
   text-decoration: none;
-  color: white;
+  color: #fff;
 }
 
 h1 {
-  font-size: 8rem;
+  font-size: 150px;
   font-weight: 300;
   color: var(--primary-color-900);
 }
@@ -98,10 +98,18 @@ section {
   justify-content: space-between;
 }
 
+.menu-center {
+  position: relative;
+  width: 54px;
+  height: 54px;
+  cursor: pointer;
+}
+
 .menu-bars {
-  margin-left: 2rem;
-  font-size: 2rem;
-  background: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .nav-menu {
@@ -227,7 +235,7 @@ span {
     max-width: 66rem;
   }
   .right-column {
-    padding-top: 10%;
+    padding-top: 8%;
   }
 
   h3 {
@@ -326,6 +334,7 @@ span {
 
 .image-section {
   width: 50vw;
+  margin-bottom: -5px;
   img {
     width: 100%;
   }
@@ -360,13 +369,13 @@ span {
   flex-direction: row;
   margin-bottom: 5em;
   p {
-    font-size: 1.8rem;
-    margin-right: 0.5em;
+    font-size: 18px;
+    margin-right: 12px;
   }
   span {
     width: 29vw;
     border-bottom: 1px solid var(--primary-color-900);
-    margin-bottom: 1.2em;
+    margin-bottom: 5px;
   }
 }
 
@@ -402,12 +411,6 @@ span {
   background-size: cover;
 }
 
-.run {
-  .right-column {
-    padding-top: 9%;
-  }
-}
-
 /***********SubHero**********/
 
 .bg-sub-hero {
@@ -441,10 +444,19 @@ span {
           color: var(--primary-color-900);
         }
         h4 {
-          font-size: 2.4rem;
+          font-size: 62px;
           color: var(--neutral-color-800);
+          font-weight: var(--fw-semibold-600);
           margin: 0;
-          padding-top: 1em;
+          padding-top: 50px;
+          line-height: 76px;
+        }
+        h5 {
+          font-size: 62px;
+          color: var(--neutral-color-800);
+          font-weight: var(--fw-semibold-600);
+          margin: 0;
+          line-height: 76px;
         }
         p {
           margin-top: -3em;
@@ -472,6 +484,10 @@ span {
       }
     }
   }
+}
+
+p .blue-text {
+  color: #122741;
 }
 
 .sub-hero .sub-hero-container .split .subtitle-text p {
@@ -557,11 +573,6 @@ summary::marker {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  .hero-static {
-    .right-column {
-      padding-top: 9%;
-    }
-  }
 }
 
 .bg-neutral {
@@ -595,6 +606,41 @@ summary::marker {
 //   background-size: cover;
 // }
 
+.v-header {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.header-container {
+  max-width: 960px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: auto;
+  text-align: center;
+}
+
+.fullscreen-video-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  min-width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.fullscreen-video-wrap video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.blue-text {
+  color: #122741;
+}
 /**********See**********/
 
 .bg-see {
@@ -605,7 +651,7 @@ summary::marker {
 
 .centered {
   margin: 0 auto;
-  max-width: 80vw;
+  max-width: 85vw;
 }
 
 .subtitle-text h3 {
@@ -617,6 +663,17 @@ summary::marker {
 .bg-cards {
   background-color: #f9f9f9;
   min-height: 85vh;
+}
+
+.col-1 {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 2em;
+}
+.col-2 {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 2em;
 }
 
 .small-cards {
@@ -634,6 +691,10 @@ summary::marker {
 
 .card-single {
   margin: 2em 2em;
+  display: flex;
+  flex-direction: column;
+  max-width: 226px;
+  align-items: center;
 }
 
 .card-single img {
@@ -641,23 +702,30 @@ summary::marker {
   background-color: #fff;
   box-shadow: 0px 2px 4px -1px #b5b5b5;
   border-radius: 2.5em;
-  margin-bottom: 2em;
+  margin-bottom: 32px;
 }
 
 .card-single p {
-  font-size: 0.9rem;
+  font-size: 20px;
   text-align: center;
   margin: 0 auto;
   max-width: 11em;
 }
 
 .bg-cards p {
-  font-size: 0.9rem;
+  font-size: 20px;
   text-align: center;
 }
 
 .cards-description {
-  padding: 3em 0;
+  padding: 3em 0 10em 0;
+  font-size: 18px;
+  max-width: 1158px;
+}
+
+.paragraph-container {
+  display: flex;
+  justify-content: center;
 }
 
 /*********Ask********/
@@ -666,6 +734,10 @@ summary::marker {
   background-image: url("./assets/images/image-22.jpg");
   background-position: center;
   background-size: cover;
+}
+
+.sub-hero-ask {
+  background-image: url("./assets/images/image-8.jpg");
 }
 
 .map-container-ask {
@@ -685,13 +757,12 @@ summary::marker {
 .form-container {
   max-width: 605px;
   width: 100%;
-  background-color: #fff;
   font-size: 12px;
   color: #999;
 }
 
 .form-container ::placeholder {
-  color: #808080;
+  color: #999;
 }
 
 .gender-details {
@@ -736,6 +807,7 @@ form .input-box span.details {
   border-bottom-width: 1px;
   border-bottom-color: var(--neutral-gray-500);
   transition: all 0.3s ease;
+  background: none;
 }
 
 .user-details .input-box input:focus,
@@ -896,6 +968,11 @@ textarea {
   min-width: 605px;
   padding: 1em;
   border-radius: 5px;
+  background: none;
+}
+
+textarea::placeholder {
+  color: #fff;
 }
 
 input,
@@ -910,7 +987,7 @@ select {
   display: flex;
   justify-content: space-between;
   background-color: var(--neutral-color-800);
-  height: 9.5vh;
+  height: 100px;
   margin-top: -5px;
 }
 
@@ -921,6 +998,59 @@ select {
   padding-top: 2em;
 }
 
+.footer-navigation {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100px;
+  background-color: #1a385d;
+}
+
+.footer-navigation-crew {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  height: 100px;
+  background-color: #1a385d;
+  padding-left: 22%;
+}
+
+.footer-navigation-crew .vl {
+  margin-right: 35px;
+}
+
+.footer-navigation-crew p {
+  font-size: 12px;
+  color: #fff;
+  font-weight: 300;
+  margin-right: 35px;
+  max-width: 500px;
+  text-align: right;
+}
+
+.button-description {
+  display: flex;
+  align-items: center;
+}
+
+.button-description a {
+  padding: 7px 39px;
+  border: 1px solid #fff;
+  border-radius: 2px;
+  font-size: 9px;
+}
+
+.footer-navigation p {
+  font-size: 12px;
+  color: #fff;
+  font-weight: 300;
+  margin-right: 35px;
+}
+
+.vl {
+  height: 75px;
+  border-left: 1px solid #fff;
+}
 .social {
   padding-top: 5px;
 }

@@ -9,6 +9,7 @@ function Form() {
             <div className="gender-details">
               <input type="radio" name="gender" id="dot-1" />
               <input type="radio" name="gender" id="dot-2" />
+              <input type="radio" name="gender" id="dot-3" />
               <div class="category">
                 <label for="dot-1">
                   <span className="dot one"></span>
@@ -16,6 +17,10 @@ function Form() {
                 </label>
                 <label for="dot-2">
                   <span className="dot two"></span>
+                  <span className="gender">Ms</span>
+                </label>
+                <label for="dot-3">
+                  <span className="dot three"></span>
                   <span className="gender">Mrs</span>
                 </label>
               </div>
@@ -25,7 +30,7 @@ function Form() {
                 <input type="text" placeholder="First Name" required />
               </div>
               <div className="input-box">
-                <input type="text" placeholder="Last Name" required />
+                <input type="text" placeholder="Surname" required />
               </div>
               <div className="input-box">
                 <input type="text" placeholder="Email Address" required />
@@ -35,68 +40,49 @@ function Form() {
               </div>
             </div>
             <div className="contact-preference">
-              <input type="radio" name="preference" id="dot-3" />
               <input type="radio" name="preference" id="dot-4" />
-              <span className="contact-title">Conctact Preference</span>
-              <div className="category wider">
-                <label for="dot-3">
-                  <span className="dot three"></span>
-                  <span className="preference">Email Address</span>
-                </label>
+              <input type="radio" name="preference" id="dot-5" />
+              <span className="contact-title">Contact Preference</span>
+              <div className="category wider check-grid">
                 <label for="dot-4">
                   <span className="dot four"></span>
+                  <span className="preference">Email Address</span>
+                </label>
+                <label for="dot-5">
+                  <span className="dot five"></span>
                   <span className="preference">Telephone Number</span>
                 </label>
               </div>
             </div>
-            <div className="checkbox-group">
-              <input type="checkbox" name="interest" id="check-1" />
-              <input type="checkbox" name="interest" id="check-2" />
-              <input type="checkbox" name="interest" id="check-3" />
-              <input type="checkbox" name="interest" id="check-4" />
-              <input type="checkbox" name="interest" id="check-5" />
-              <input type="checkbox" name="interest" id="check-6" />
-              <input type="checkbox" name="interest" id="check-7" />
-              <input type="checkbox" name="interest" id="check-8" />
-              <input type="checkbox" name="interest" id="check-9" />
-              <span className="interests-title">Your Interests</span>
-              <div className="category wider">
-                <label className="check-container" for="check-1">
-                  <span className="check one"></span>
-                  <span className="preference">Telephone Number</span>
-                </label>
-                <label for="check-2">
-                  <span className="check two"></span>
-                  <span className="preference">Telephone Number</span>
-                </label>
-                <label for="check-3">
-                  <span className="check three"></span>
-                  <span className="preference">Telephone Number</span>
-                </label>
-                <label for="check-4">
-                  <span className="check four"></span>
-                  <span className="preference">Telephone Number</span>
-                </label>
-                <label for="check-5">
-                  <span className="check five"></span>
-                  <span className="preference">Telephone Number</span>
-                </label>
-                <label for="check-6">
-                  <span className="check six"></span>
-                  <span className="preference">Telephone Number</span>
-                </label>
-                <label for="check-7">
-                  <span className="check seven"></span>
-                  <span className="preference">Telephone Number</span>
-                </label>
-                <label for="check-8">
-                  <span className="check eight"></span>
-                  <span className="preference">Telephone Number</span>
-                </label>
-                <label for="check-9">
-                  <span className="check nine"></span>
-                  <span className="preference">Telephone Number</span>
-                </label>
+            <span className="interests-title">Your Interests</span>
+            <div className="checkbox-container">
+              <div className="checkbox-wrapper">
+                <input type="checkbox" id="check" />
+                <label for="check">Buy/Sell</label>
+              </div>
+              <div className="checkbox-wrapper">
+                <input type="checkbox" id="check" />
+                <label for="check">Yacht management</label>
+              </div>
+              <div className="checkbox-wrapper">
+                <input type="checkbox" id="check" />
+                <label for="check">Find your crew</label>
+              </div>
+              <div className="checkbox-wrapper">
+                <input type="checkbox" id="check" />
+                <label for="check">Technical Query</label>
+              </div>
+              <div className="checkbox-wrapper">
+                <input type="checkbox" id="check" />
+                <label for="check">Building a Yacht</label>
+              </div>
+              <div className="checkbox-wrapper">
+                <input type="checkbox" id="check" />
+                <label for="check">Join our team</label>
+              </div>
+              <div className="checkbox-wrapper">
+                <input type="checkbox" id="check" />
+                <label for="check">Other</label>
               </div>
             </div>
             <textarea
@@ -104,7 +90,7 @@ function Form() {
               name="marine-text"
               rows="4"
               cols="50"
-              placeholder="Type Here..."
+              placeholder="Your message"
             ></textarea>
             <div class="button">
               <input type="submit" value="Send" />

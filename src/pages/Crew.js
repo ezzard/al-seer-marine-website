@@ -56,6 +56,7 @@ function Crew() {
             number="05"
             line={<span></span>}
             bigTitle="Crew"
+            subtitle="Work with our expert Yacht Brokerage Team"
             firstLine="Dream, Build, Support.  It might sound a little like the ABCs, but this simple, three step ethos is why ASM Yachts has cultivated an award-winning reputation for bespoke yacht craftsmanship."
             blockText="Through ASM Yachts you can experience true serenity aboard some of the world’s most beautiful and decadent vessels.  All of the yachts and superyachts we operate are designed to provide a totally unforgettable adventure, in which the slightest want is effortlessly catered for. Our team are on hand 24/7 to ensure that every second of your trip is tailored to your specific needs.  At ASM Yachts, you know you are getting the best."
           />

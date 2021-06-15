@@ -30,13 +30,8 @@ function Navbar() {
                 onClick={showSidebar}
               />
             </Link>
-            <Link to="#" className="logo">
-              <img
-                src={logo}
-                alt="Logo"
-                className="mobile-menu"
-                onClick={showSidebar}
-              />
+            <Link to="/" className="logo">
+              <img src={logo} alt="Logo" className="mobile-menu" />
             </Link>
           </div>
         </div>

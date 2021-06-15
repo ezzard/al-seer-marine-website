@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import arrowDown from "../assets/images/arrow-down.png";
 import arrow from "../assets/images/arrow-right.png";
@@ -18,12 +19,14 @@ function Hero(props) {
       <div className="container">
         <div className="left-column">
           <h3>{props.heroText}</h3>
-          <a href="" className="primary-cta">
-            <span className="button-text">
-              <p>Join Us</p>
-            </span>
-            <img src={arrow} alt="arrow right" />
-          </a>
+          <Link to="/join">
+            <a href="" className="primary-cta">
+              <span className="button-text">
+                <p>Join Us</p>
+              </span>
+              <img src={arrow} alt="arrow right" />
+            </a>
+          </Link>
         </div>
 
         <div className="right-column">

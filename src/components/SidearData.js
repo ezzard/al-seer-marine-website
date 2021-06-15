@@ -42,12 +42,6 @@ export const SidebarData = [
     cName: "nav-text",
   },
   {
-    title: "Join",
-    path: "/join",
-    icon: <AiIcons.AiFillHome />,
-    cName: "nav-text",
-  },
-  {
     title: "See",
     path: "/see",
     icon: <AiIcons.AiFillHome />,

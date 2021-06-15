@@ -13,26 +13,28 @@ import Join from "./pages/Join";
 import Ask from "./pages/Ask";
 
 import "./App.scss";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
-    return (
-        <div className="app">
-            <Router>
-                <Navbar />
-                <Switch>
-                    <Route path="/" exact component={Home} />
-                    <Route path="/run" component={Run} />
-                    <Route path="/explore" component={Explore} />
-                    <Route path="/create" component={Create} />
-                    <Route path="/own" component={Own} />
-                    <Route path="/crew" component={Crew} />
-                    <Route path="/see" component={See} />
-                    <Route path="/join" component={Join} />
-                    <Route path="/ask" component={Ask} />
-                </Switch>
-            </Router>
-        </div>
-    );
+  return (
+    <div className="app">
+      <Router>
+        <ScrollToTop />
+        <Navbar />
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/run" component={Run} />
+          <Route path="/explore" component={Explore} />
+          <Route path="/create" component={Create} />
+          <Route path="/own" component={Own} />
+          <Route path="/crew" component={Crew} />
+          <Route path="/see" component={See} />
+          <Route path="/join" component={Join} />
+          <Route path="/ask" component={Ask} />
+        </Switch>
+      </Router>
+    </div>
+  );
 }
 
 export default App;

@@ -3,7 +3,7 @@ import React from "react";
 import HeroStatic from "../components/HeroStatic";
 import SubHero from "../components/SubHero";
 
-import map1 from "../assets/images/map-1.png";
+import map2 from "../assets/images/map-2.png";
 
 import "../App.scss";
 import Footer from "../components/Footer";
@@ -43,7 +43,7 @@ function Ask() {
           loading="lazy"
         ></iframe>
        */}
-        <img src={map1} alt="Dubai's Map" />
+        <img src={map2} alt="Dubai's Map" />
       </div>
       <Footer />
     </div>

@@ -15,14 +15,17 @@ function Explore() {
       <div class="bg-explore">
         <HeroStatic heroText="Explore" />
       </div>
-      <div className="sub-hero-viewport">
-        <SubHero
-          line={<span></span>}
-          number="02"
-          bigTitle="Explore"
-          firstLine="Dreaming of the trip of a lifetime?  Let ASM Yachts take you there."
-          blockText="Through ASM Yachts you can experience true serenity aboard some of the world’s most beautiful and decadent vessels.  All of the yachts and superyachts we operate are designed to provide a totally unforgettable adventure, in which the slightest want is effortlessly catered for. Our team are on hand 24/7 to ensure that every second of your trip is tailored to your specific needs.  At ASM Yachts, you know you are getting the best."
-        />
+      <div class="bg-sub-hero">
+        <div className="sub-hero-viewport">
+          <SubHero
+            line={<span></span>}
+            number="02"
+            bigTitle="Explore"
+            subtitle="Experience the trip of a lifetime on the ocean waves"
+            firstLine="Dreaming of the trip of a lifetime?  Let ASM Yachts take you there."
+            blockText="Through ASM Yachts you can experience true serenity aboard some of the world’s most beautiful and decadent vessels.  All of the yachts and superyachts we operate are designed to provide a totally unforgettable adventure, in which the slightest want is effortlessly catered for. Our team are on hand 24/7 to ensure that every second of your trip is tailored to your specific needs.  At ASM Yachts, you know you are getting the best."
+          />
+        </div>
       </div>
       <div class="map-container">
         {/* <iframe

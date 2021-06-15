@@ -13,7 +13,7 @@ function TextSection(props) {
         <h1 className="big-title">{props.title}</h1>
         <p className="description">{props.description}</p>
         <a href="" className="normal-cta">
-          <span className="button-text">Learn More</span>{" "}
+          <span className="button-text">Learn More</span>
           <img src={arrowDark} alt="arrow right" />
         </a>
       </div>

@@ -13,19 +13,19 @@ import Footer from "../components/Footer";
 import "../App.scss";
 
 function Home() {
-  return (
-    <div>
-      <Hero heroText="A Leading Yacht &amp; Marine Ccompany" />
-      <HomeSection />
-      <HomeSection1 />
-      <HomeSection2 />
-      <HomeSection3 />
-      <HomeSection4 />
-      <HomeSection5 />
-      <HomeSectionForm />
-      <Footer />
-    </div>
-  );
+    return (
+        <div>
+            <Hero heroText="A LEADING YACHT &amp; MARINE COMPANY" />
+            <HomeSection />
+            <HomeSection1 />
+            <HomeSection2 />
+            <HomeSection3 />
+            <HomeSection4 />
+            <HomeSection5 />
+            <HomeSectionForm />
+            <Footer />
+        </div>
+    );
 }
 
 export default Home;

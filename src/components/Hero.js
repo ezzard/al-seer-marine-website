@@ -10,37 +10,36 @@ import image3 from "../assets/images/hero-img-3.jpg";
 import scroll from "../assets/images/vertical-scroll.png";
 
 function Hero(props) {
-  return (
-    <section className="hero">
-      <BackgroundSlider
-        images={[image1, image2, image3]}
-        duration={6}
-        transition={1}
-      />
-      <div className="container">
-        <div className="left-column">
-          <h3>{props.heroText}</h3>
-          <Link to="/join">
-            <a href="" className="primary-cta">
-              <span className="button-text">
-                <p>Join Us</p>
-              </span>
-              <img src={arrow} alt="arrow right" />
-            </a>
-          </Link>
-        </div>
-        <div className="vertical-scroll">
-          <img src={scroll} alt="Scroll" />
-        </div>
-        <div className="right-column">
-          <a href="" className="secondary-cta">
-            <span className="button-text">More</span>
-            <img src={arrowDown} alt="arrow dowm" />
-          </a>
-        </div>
-      </div>
-    </section>
-  );
+    return (
+        <section className="hero">
+            <BackgroundSlider images={[image1, image2, image3]} duration={6} transition={1} />
+            <div className="container">
+                <div className="left-column">
+                    <h3>
+                        A LEADING YACHT &amp; <br /> MARINE COMPANY
+                    </h3>
+                    {/* <h3>{props.heroText}</h3> */}
+                    <Link to="/join">
+                        <a href="" className="primary-cta">
+                            <span className="button-text">
+                                <p>Join Us</p>
+                            </span>
+                            <img src={arrow} alt="arrow right" />
+                        </a>
+                    </Link>
+                </div>
+                <div className="vertical-scroll">
+                    <img src={scroll} alt="Scroll" />
+                </div>
+                <div className="right-column">
+                    <a href="" className="secondary-cta">
+                        <span className="button-text">More</span>
+                        <img src={arrowDown} alt="arrow dowm" />
+                    </a>
+                </div>
+            </div>
+        </section>
+    );
 }
 
 export default Hero;

@@ -7,6 +7,7 @@ import BackgroundSlider from "react-background-slider";
 import image1 from "../assets/images/hero-img-1.jpg";
 import image2 from "../assets/images/hero-img-2.jpg";
 import image3 from "../assets/images/hero-img-3.jpg";
+import scroll from "../assets/images/vertical-scroll.png";
 
 function Hero(props) {
   return (
@@ -28,7 +29,9 @@ function Hero(props) {
             </a>
           </Link>
         </div>
-
+        <div className="vertical-scroll">
+          <img src={scroll} alt="Scroll" />
+        </div>
         <div className="right-column">
           <a href="" className="secondary-cta">
             <span className="button-text">More</span>

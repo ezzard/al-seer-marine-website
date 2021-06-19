@@ -1,11 +1,49 @@
-import React from "react";
+import { React, useEffect } from "react";
+import { useInView } from "react-intersection-observer";
+import { motion, useAnimation } from "framer-motion";
+
+import styles from "./ImageSection.module.scss";
 
 function ImageSection(props) {
-  return (
-    <div className="image-section">
-      <img src={props.img} alt="Yacht interior" />
-    </div>
-  );
+    const bgImageWidth = 50;
+
+    const { ref, inView } = useInView({
+        triggerOnce: true,
+        threshold: 0.8
+    });
+
+    const animation = useAnimation();
+
+    useEffect(() => {
+        if (inView) {
+            animation.start({
+                scale: 1.15,
+                opacity: 1,
+                transition: {
+                    duration: 0.9,
+                    delay: 0.2
+                }
+            });
+        }
+        if (!inView) {
+            animation.start({
+                scale: 1.02,
+                opacity: 1
+            });
+        }
+    }, [!inView]);
+    return (
+        <div ref={ref} className={styles.wrapper}>
+            <motion.div animate={animation}>
+                <div
+                    style={{
+                        background: `url(${props.img}) ${bgImageWidth}%/ cover border-box padding-box`
+                    }}
+                    className={styles.border_blur}
+                ></div>
+            </motion.div>
+        </div>
+    );
 }
 
 export default ImageSection;

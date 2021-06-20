@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/al-seer-marine-website/static/css/main.670aa30c.chunk.css",
-    "main.js": "/al-seer-marine-website/static/js/main.88c3f476.chunk.js",
-    "main.js.map": "/al-seer-marine-website/static/js/main.88c3f476.chunk.js.map",
-    "runtime-main.js": "/al-seer-marine-website/static/js/runtime-main.16a2dda9.js",
-    "runtime-main.js.map": "/al-seer-marine-website/static/js/runtime-main.16a2dda9.js.map",
-    "static/js/2.9e5b2809.chunk.js": "/al-seer-marine-website/static/js/2.9e5b2809.chunk.js",
-    "static/js/2.9e5b2809.chunk.js.map": "/al-seer-marine-website/static/js/2.9e5b2809.chunk.js.map",
-    "static/js/3.84ec5f64.chunk.js": "/al-seer-marine-website/static/js/3.84ec5f64.chunk.js",
-    "static/js/3.84ec5f64.chunk.js.map": "/al-seer-marine-website/static/js/3.84ec5f64.chunk.js.map",
+    "main.css": "/al-seer-marine-website/static/css/main.456efc16.chunk.css",
+    "main.js": "/al-seer-marine-website/static/js/main.27d10382.chunk.js",
+    "main.js.map": "/al-seer-marine-website/static/js/main.27d10382.chunk.js.map",
+    "runtime-main.js": "/al-seer-marine-website/static/js/runtime-main.334d311e.js",
+    "runtime-main.js.map": "/al-seer-marine-website/static/js/runtime-main.334d311e.js.map",
+    "static/js/2.1bb37c53.chunk.js": "/al-seer-marine-website/static/js/2.1bb37c53.chunk.js",
+    "static/js/2.1bb37c53.chunk.js.map": "/al-seer-marine-website/static/js/2.1bb37c53.chunk.js.map",
+    "static/js/3.9a1ac3e9.chunk.js": "/al-seer-marine-website/static/js/3.9a1ac3e9.chunk.js",
+    "static/js/3.9a1ac3e9.chunk.js.map": "/al-seer-marine-website/static/js/3.9a1ac3e9.chunk.js.map",
     "index.html": "/al-seer-marine-website/index.html",
-    "static/css/main.670aa30c.chunk.css.map": "/al-seer-marine-website/static/css/main.670aa30c.chunk.css.map",
-    "static/js/2.9e5b2809.chunk.js.LICENSE.txt": "/al-seer-marine-website/static/js/2.9e5b2809.chunk.js.LICENSE.txt",
+    "static/css/main.456efc16.chunk.css.map": "/al-seer-marine-website/static/css/main.456efc16.chunk.css.map",
+    "static/js/2.1bb37c53.chunk.js.LICENSE.txt": "/al-seer-marine-website/static/js/2.1bb37c53.chunk.js.LICENSE.txt",
     "static/media/210315_ASM_Edit_V4.e8605cdd.mp4": "/al-seer-marine-website/static/media/210315_ASM_Edit_V4.e8605cdd.mp4",
     "static/media/Join.module.scss": "/al-seer-marine-website/static/media/Group_343.6044918b.jpg",
     "static/media/arrow-right-dark.a6ce42aa.svg": "/al-seer-marine-website/static/media/arrow-right-dark.a6ce42aa.svg",
@@ -20,6 +20,7 @@
     "static/media/card_img_2.f06b8989.jpg": "/al-seer-marine-website/static/media/card_img_2.f06b8989.jpg",
     "static/media/card_img_3.3e81a259.jpg": "/al-seer-marine-website/static/media/card_img_3.3e81a259.jpg",
     "static/media/App.scss": "/al-seer-marine-website/static/media/image-9.388e8197.jpg",
+    "static/media/global-locations-map.26f0f882.svg": "/al-seer-marine-website/static/media/global-locations-map.26f0f882.svg",
     "static/media/hero-img-1.d896a2a6.jpg": "/al-seer-marine-website/static/media/hero-img-1.d896a2a6.jpg",
     "static/media/hero-img-2.31bf731d.jpg": "/al-seer-marine-website/static/media/hero-img-2.31bf731d.jpg",
     "static/media/hero-img-3.1c39c4a0.jpg": "/al-seer-marine-website/static/media/hero-img-3.1c39c4a0.jpg",
@@ -45,13 +46,12 @@
     "static/media/image-form.7d470f11.jpg": "/al-seer-marine-website/static/media/image-form.7d470f11.jpg",
     "static/media/image2.ef84b024.jpg": "/al-seer-marine-website/static/media/image2.ef84b024.jpg",
     "static/media/logo-sidebar.9326aaf5.svg": "/al-seer-marine-website/static/media/logo-sidebar.9326aaf5.svg",
-    "static/media/map-1.765589e2.png": "/al-seer-marine-website/static/media/map-1.765589e2.png",
     "static/media/map-2.5095d567.png": "/al-seer-marine-website/static/media/map-2.5095d567.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.16a2dda9.js",
-    "static/js/2.9e5b2809.chunk.js",
-    "static/css/main.670aa30c.chunk.css",
-    "static/js/main.88c3f476.chunk.js"
+    "static/js/runtime-main.334d311e.js",
+    "static/js/2.1bb37c53.chunk.js",
+    "static/css/main.456efc16.chunk.css",
+    "static/js/main.27d10382.chunk.js"
   ]
 }

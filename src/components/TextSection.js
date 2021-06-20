@@ -42,13 +42,14 @@ function TextSection(props) {
         opacity: 1,
         transition: {
           duration: 1,
-          delay: 0.5,
+          delay: 0.7,
         },
       });
     }
     if (!inView) {
       animation2.start({
         scaleX: 0,
+        originX: 0,
         opacity: 0,
       });
     }
@@ -111,7 +112,28 @@ function TextSection(props) {
     }
     if (!inView) {
       animation5.start({
-        x: -240,
+        x: -40,
+        opacity: 0,
+      });
+    }
+  }, [inView]);
+
+  const animation6 = useAnimation();
+
+  useEffect(() => {
+    if (inView) {
+      animation6.start({
+        x: 0,
+        opacity: 1,
+        transition: {
+          duration: 0.6,
+          delay: 0.4,
+        },
+      });
+    }
+    if (!inView) {
+      animation6.start({
+        x: -100,
         opacity: 0,
       });
     }
@@ -136,9 +158,9 @@ function TextSection(props) {
 
         <Link to={props.link} className="normal-cta">
           {/* <a href="" className="normal-cta"> */}
-          <motion.span animate={animation} className="button-text">
-            Learn More
-          </motion.span>
+          <motion.div animate={animation6}>
+            <span className="button-text">Learn More</span>
+          </motion.div>
           <motion.img animate={animation5} src={arrowDark} alt="arrow right" />
           {/* </a> */}
         </Link>

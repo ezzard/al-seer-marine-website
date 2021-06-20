@@ -41,12 +41,13 @@ function TextSection(props) {
         opacity: 1,
         transition: {
           duration: 1,
-          delay: 0.5,
+          delay: 0.7,
         },
       });
     }
     if (!inView) {
       animation2.start({
+        originX: 0,
         scaleX: 0,
         opacity: 0,
       });

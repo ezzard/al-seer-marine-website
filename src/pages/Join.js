@@ -1,4 +1,5 @@
 import React from "react";
+import { Controller, Scene } from "react-scrollmagic";
 
 // Components
 import CardList from "../components/CardList";
@@ -93,10 +94,18 @@ const Join = () => {
       <img className={styles.bg_image} src={boat} />
       <div className={styles.wrapper}>
         <div className={styles.img_container}>
-          <h1 className={styles.title}>Calling all Super Crew!</h1>
+          <Controller>
+            <Scene duration={600} pin>
+              <h1 className={styles.title}>Calling all Super Crew!</h1>
+            </Scene>
+          </Controller>
         </div>
         <div className={styles.titles_container}>
-          <h3 className={styles.subtitle}>ARE YOU:</h3>
+          <Controller>
+            <Scene duration={600} pin>
+              <h3 className={styles.subtitle}>ARE YOU:</h3>
+            </Scene>
+          </Controller>
           <h3 className={styles.subtitle}>PASSIONATE</h3>
           <h3 className={styles.subtitle}>ADVENTUROUS </h3>
           <h3 className={styles.subtitle}>HARD-WORKING </h3>

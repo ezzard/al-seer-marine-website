@@ -73,7 +73,7 @@ function Hero(props) {
         </div>
         <div className="vertical-scroll">
           <motion.img
-            initial={{ scaleY: 0 }}
+            initial={{ scaleY: 0, originY: 0 }}
             animate={{ scaleY: 1 }}
             transition={{ duration: 1.5, delay: 0.2 }}
             src={scroll}

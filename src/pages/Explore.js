@@ -5,9 +5,9 @@ import { useEffect } from "react";
 
 import HeroStatic from "../components/HeroStatic";
 import SubHero from "../components/SubHero";
-import RunContent from "../components/RunContent";
+// import RunContent from "../components/RunContent";
 
-import map1 from "../assets/images/map-1.png";
+import map1 from "../assets/images/global-locations-map.svg";
 
 import "../App.scss";
 

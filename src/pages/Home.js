@@ -23,7 +23,7 @@ function Home() {
             <HomeSection4 />
             <HomeSection5 />
             <HomeSectionForm />
-            <Footer />
+            {/* <Footer /> */}
         </div>
     );
 }

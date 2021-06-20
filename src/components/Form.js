@@ -2,7 +2,7 @@ import React from "react";
 
 function Form() {
     return (
-        <div>
+        <>
             <div className="form-container">
                 <div className="content">
                     <form action="#">
@@ -98,7 +98,7 @@ function Form() {
                     </form>
                 </div>
             </div>
-        </div>
+        </>
     );
 }
 

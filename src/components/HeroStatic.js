@@ -1,8 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useInView } from "react-intersection-observer";
-import { useEffect } from "react";
+import { useEffect, Component } from "react";
 import { motion, useAnimation } from "framer-motion";
+import { Link as Link2 } from "react-scroll";
 
 import arrowDown from "../assets/images/arrow-down.png";
 import arrow from "../assets/images/arrow-right.png";
@@ -36,7 +37,7 @@ function HeroStatic(props) {
         </div>
 
         <div className="right-column">
-          <a href="" className="secondary-cta">
+          <Link2 to="subhero" smooth={true} className="secondary-cta">
             <motion.span
               initial={{ opacity: 0, y: -80 }}
               animate={{ opacity: 1, y: 0 }}
@@ -52,7 +53,7 @@ function HeroStatic(props) {
               src={arrowDown}
               alt="arrow dowm"
             />
-          </a>
+          </Link2>
         </div>
       </div>
     </section>

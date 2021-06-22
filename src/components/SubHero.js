@@ -116,7 +116,7 @@ function SubHero(props) {
   }, [inView]);
 
   return (
-    <div ref={ref} className="sub-hero">
+    <div ref={ref} id="subhero" className="sub-hero">
       <div className="sub-hero-container">
         <div className="number-line">
           <motion.p animate={animation} className="number-section">

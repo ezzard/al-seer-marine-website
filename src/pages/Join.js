@@ -1,9 +1,12 @@
 import React from "react";
-import { Controller, Scene } from "react-scrollmagic";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
 
 // Components
 import CardList from "../components/CardList";
 import Footer from "../components/Footer";
+import Parallax from "../components/Parallax";
 
 // Images
 import boat from "../assets/images/Group_343.jpg";
@@ -12,7 +15,13 @@ import boat from "../assets/images/Group_343.jpg";
 import styles from "./Join.module.scss";
 import "../App.scss";
 
-const Join = () => {
+function Join() {
+  const controls = useAnimation();
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+    threshold: 0.2,
+  });
+
   let jobPostingData = [
     {
       id: 1,
@@ -88,51 +97,81 @@ const Join = () => {
     },
   ];
 
+  const animation = useAnimation();
+
+  useEffect(() => {
+    if (inView) {
+      animation.start({
+        y: 0,
+        opacity: 1,
+        transition: {
+          duration: 0.6,
+          delay: 0.1,
+        },
+      });
+    }
+    if (!inView) {
+      animation.start({
+        y: -40,
+        opacity: 0,
+      });
+    }
+  }, [inView]);
+
   return (
-    <article className={styles.container}>
-      {/* <div className={styles.bg_image}></div> */}
-      <img className={styles.bg_image} src={boat} />
-      <div className={styles.wrapper}>
-        <div className={styles.img_container}>
-          <Controller>
-            <Scene duration={600} pin>
-              <h1 className={styles.title}>Calling all Super Crew!</h1>
-            </Scene>
-          </Controller>
-        </div>
-        <div className={styles.titles_container}>
-          <Controller>
-            <Scene duration={600} pin>
-              <h3 className={styles.subtitle}>ARE YOU:</h3>
-            </Scene>
-          </Controller>
-          <h3 className={styles.subtitle}>PASSIONATE</h3>
-          <h3 className={styles.subtitle}>ADVENTUROUS </h3>
-          <h3 className={styles.subtitle}>HARD-WORKING </h3>
-          <h3 className={styles.subtitle}>FUN-LOVING</h3>
-          <h3 className={`${styles.subtitle} ${styles.margin}`}>CREATIVE</h3>
-        </div>
-        <div className={styles.cta_block}>
-          <h4 className={styles.cta_title}>
-            If the answer is <strong>YES</strong>, <br /> then we want to hear
-            from you.
-          </h4>
-          <p className={styles.cta_text}>
-            As one of the world’s leading yacht management companies we have a
-            wide range of roles available at ASM Yachts and can guide you
-            through how to become a certified crew member. Take a look at our
-            current vacancies or send us your CV and profile directly, letting
-            us know why you would be a good fit for the sea <i>life</i>.
-          </p>
-        </div>
-      </div>
-      <div className={styles.card_section}>
-        <h2 className={styles.card_section_title}>Current vacancies</h2>
+    <>
+      {/* <article className={styles.container}>
+        <Scroll
+          width={1900}
+          height={1000}
+          contentOffsetY={y}
+          dragEnabled={false}
+          onScroll={onScroll}
+        >
+          <img
+            height={5000}
+            y={backgroundImg}
+            className={styles.bg_image}
+            src={boat}
+          />
+
+          <Frame
+            style={{ position: "absolute" }}
+            background={""}
+            top={200}
+            y={titleY}
+          >
+            <div className={styles.titles_container}>
+              <h3 right={300} className={styles.subtitle}>
+                ARE YOU:
+              </h3>
+            </div>
+          </Frame>
+
+          <Frame
+            style={{ position: "absolute" }}
+            background={""}
+            top={1200}
+            y={titleY}
+          >
+            <div className={styles.titles_container}>
+              <h3 right={300} className={styles.subtitle}>
+                ARE dasdas
+              </h3>
+            </div>
+          </Frame>
+        </Scroll>
+      </article>  */}
+
+      <Parallax />
+      <div ref={ref} className={styles.card_section}>
+        <motion.h2 animate={animation} className={styles.card_section_title}>
+          Current vacancies
+        </motion.h2>
         <CardList items={jobPostingData} />
       </div>
-      <Footer />
-    </article>
+    </>
   );
-};
+}
 
 export default Join;

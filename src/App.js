@@ -23,7 +23,7 @@ function App() {
         <Navbar />
         <ScrollToTop />
         <Switch>
-          <Route path="/" exact component={Home} />
+          <Route path="" exact component={Home} />
           <Route path="/run" component={Run} />
           <Route path="/explore" component={Explore} />
           <Route path="/create" component={Create} />
